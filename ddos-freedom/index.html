@@ -1,0 +1,214 @@
+<head>
+	<meta charset="utf-8">
+	<title>DDoS &amp; World Freedom</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" type="text/css" href="libraries/jquery-jvectormap-2.0.3/jquery-jvectormap-2.0.3.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italikc" type="text/css">
+ <script src="libraries/jquery-1.11.2.min.js"></script>
+	
+	<script src="libraries/jquery-jvectormap-2.0.3/jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="libraries/jquery-jvectormap-2.0.3/jquery-jvectormap-world-mill.js"></script>
+  
+  <script src="libraries/highcharts/highcharts.js"></script> 
+  <script src="libraries/highcharts/modules/drilldown.js"></script> 
+  <script src="libraries/highcharts/themes/dark-unica.js"></script> 
+
+  <script src="js/funzioni.js"></script>
+
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+</head>
+<body>
+	<header  id="home">
+		<nav class="sticky">
+			<div class="row">
+				<a href="#home" data-scroll="home"><img src="images/logo.png" class="logo-black" alt="DDoS Freedom"></a>
+				<ul class="main-nav">
+					<li><a class="link-project" href="#project" data-scroll="project">Project</a></li>	
+					<li><a class="link-data" href="#data" data-scroll="data">Data</a></li>
+					<li><a class="link-graphs" href="#graphs" data-scroll="graphs">Graphs</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="mobile-nav">
+		
+			<a href="#home" id="button" data-scroll="home"><img class="logo-mob" width="44" height="50" src="images/logo.png"></a>
+		
+		    <div class="menu-btn" id="menu-btn">
+		    <div></div>
+			<span></span>
+		    <span></span>
+			<span></span>
+			</div>
+		    <nav class="responsive-menu shadow-2">
+		      <ul class="mobile-menu">
+		        <li class="menu-item"><a href="#home" id="button" data-scroll="home">Home</a></li>
+		      <li class="menu-item"><a href="#project" id="button" data-scroll="project">Project</a></li>
+		      <li class="menu-item"><a href="#data" id="button" data-scroll="data">Data</a></li>
+		      <li class="menu-item"><a href="#graphs" id="button" data-scroll="graphs">Graphs</a></li>
+		    </ul>
+		  </nav>
+		</div>
+
+		<div class="title-text-box">
+			<h1>Welcome to DDoS &amp; World Freedom.</h1>
+		</div>
+	</header>
+
+
+	<section class="section-project" id="project">
+		<div class="row">
+			<h2>The Project</h2>
+			<p class="long-copy">Gli attachi Distributed Denial of Service (DDoS) possono essere utilizzati per rendere non disponibili al mondo importanti informazioni on-line, l’accesso alle informazioni è importantesia per Internet che per la libertà di espressione. Il sito analizza i maggiori attacchi avvenuti nel mondo nell’ultimo biennio (2014 – 2015) e l’indice di libertà del Paese destinazione. Mostra i dati di uno studio quantitativo sulla correlazione tra il numero di attacchi DDoS ricevuti da un paese ed i sui indici di libertà civile e diritti politici. Di seguito sono illustrate la fasi principali del progetto.</p>
+		</div>
+		
+		<div class="row">
+			<div class="col span-1-of-2 steps-box">
+				<img src="images/logo-white.png" class="logo-proj">
+			</div>  
+		 	<div class="col span-1-of-2 steps-box">
+		 		<div class="works-step">
+		 			<div>1</div>
+		 			<p>Raccolta dati da <a href="http://www.digitalattackmap.com/" target="_blank">Digital Attack Map</a> e <a href="https://freedomhouse.org/" target="_blank">Freedom House</a></p>
+		 		</div>
+		 		<div class="works-step">
+		 			<div>2</div>
+		 			<p>Analisi dei dati anche tramite strumenti statistici</p>
+		 		</div>
+		 		<div class="works-step">
+		 			<div>3</div>
+		 			<p>Visualizzazione dei dati con <a href="http://www.highcharts.com/" target="_blank">HighCharts</a> e <a href="http://jvectormap.com/" target="_blank">JVectorMap</a></p>
+		 		</div>
+		 	
+		 	</div>
+		</div>
+	</section>
+
+
+	<section class="section-data" id="data">
+		<div class="row">
+			<h2>DDoS Data</h2>
+				<p class="long-copy">Un attacco Distributed Denial of Service (DDoS) è un tentativo di rendere un servizio online  non disponibile, inondandolo con traffico proveniente da più sorgenti. Prendono di mira una vasta gamma di risorse importanti, dalle banche ai siti web di notizie, e rappresentano una grande sfida per assicurare che la gente possa pubblicare ed accedere ad informazioni importanti. Di seguito sono riportati i dettagli sui tipi di attacchi si trovano sul sito:</p>
+		</div>
+		<div class="row">
+			<div class="col span-1-of-4">
+			
+				<h3> TCP Connection Attacks - Occupazione connessioni </h3>
+				<p>Questi attacchi tentano di utilizzare tutte le connessioni disponibili a dispositivi di infrastruttura, come load-balancer, firewall e server di applicazioni. Anche i dispositivi in grado di mantenere milioni di connessioni possono essere vulnerabili da questo tipo di attacchi.</p>
+			</div>
+			
+			<div class="col span-1-of-4">
+			
+				<h3> Volumetric Attacks - Consumo della banda </h3>
+				<p>Questi attacchi cercano di consumare la banda  o tra la rete / servizio di destinazione , o tra la porta di rete / servizio bersaglio ed il resto di Internet. Questi attacchi servono semplicemente a causare congestioni.</p>
+			</div>
+			
+			<div class="col span-1-of-4">
+			
+				<h3> Fragmentation Attacks - Flusso di pacchetti </h3>
+				<p>Questi inviano un flusso di frammenti TCP o UDP ad una vittima, travolgendo la capacità della vittima di ricomporre i flussi e riducendo fortemente le prestazioni.</p>
+			</div>
+			
+			<div class="col span-1-of-4">
+			
+				<h3> Application Attacks - Applicazioni bersaglio </h3>
+				<p>Questi tentano di sopraffare un aspetto specifico di un'applicazione o di un servizio. Può essere efficace anche con pochissime macchine attaccanti generando un tasso di traffico basso (il che li rende difficili da individuare e mitigare).</p>
+			</div>
+			
+		</div>
+	</section>
+	
+	<section class="section-data" id="data">
+		<div class="row">
+			<h2>Freedom Data</h2>
+			<p class="long-copy">Freedom in the World è il frutto del report annuale di Freedom House, valuta la condizione dei diritti politici e delle libertà civili in tutto il mondo. Si compone di rating numerici e testi descrittivi di supporto per 195 paesi e 15 territori. Freedom in the World è stato pubblicato dal 1973, permettendo a Freedom House di tenere traccia delle tendenze globali in quanto a libertà per più di 40 anni. E' diventato il rapporto più letto e citato nel suo genere, viene utilizzato regolarmente da politici, giornalisti, accademici, attivisti e molti altri.</p>
+		</div>
+		<div class="row">
+			<div class="col span-1-of-4">
+			
+			<h3>Valutazione diritti politici e libertà civili</h3>
+			<p>Ad ogni paese e territorio viene assegnato un punteggio tra 0 e 4 su una serie di 25 indicatori, per un punteggio complessivo massimo di 100. Questi punteggi vengono utilizzati per determinare due valori numerici, uno per i diritti politici e l’altro delle libertà civili, un punteggio di 1 rappresenta le condizioni più libere e 7 le meno libere.</p>
+			</div>
+		
+			<div class="col span-1-of-4">
+			
+				<h3>Status: libero, parzialmente libero, non libero</h3>
+				<p>La media dei rating per i diritti politici e delle libertà civili di un paese o territorio si chiama Freedom Rating, ed è questo punteggio che determina lo stato di libero (1.0 a 2,5), in parte libero (3,0 a 5,0), o non libero ( 5.5 a 7.0).</p>
+			</div>
+			
+			<div class="col span-1-of-4">
+			
+				<h3>Valutazioni di Freedom of the World</h3>
+				<p>Freedom of the World valuta i diritti e le libertà di cui godono gli individui nel mondo reale, piuttosto che valutare i governi o le sue prestazioni di per sé. I diritti politici e le libertà civili possono essere influenzate sia da fattori statali e non, incluso ribelli e altri gruppi armati.</p>
+			</div>
+			
+			<div class="col span-1-of-4">
+			
+				<h3>Produzione di Freedom of the World</h3>
+				<p>Analisti valutano i 210 paesi e territori, utilizzando una combinazione di ricerca in loco, consultazioni con i contatti locali, e le informazioni dai giornali, organizzazioni non governative, i governi, e una varietà di altre fonti. Consulenti esperti e specialisti regionali poi riesaminano le conclusioni degli analisti. Il prodotto finale rappresenta il consenso degli analisti, consulenti ed il personale Freedom House.</p>
+			</div>
+		
+		</div>
+	</section>
+	  
+
+	<section class="section-graphs" id="graphs">
+		<div class="row">
+		<h2>Graphs</h2>
+		<p class="long-copy">Analizzando i dati ricavati tramite l’utilizzo del software IBM SPSS è stata rilevata una correlazione significativa tra libertà di un paese e la quantità di attacchi da esso ricevuti. In particolare è stato utilizzato il metodo di Spearman. I risultati dell’analisi mostrano come ci sia una leggera, ma significativa, correlazione negativa trà la libertà di un paese ed il numero di attacchi che esso subisce.
+In breve, più un paese è libero (minore il suo indice di PR e CL) maggiore sarà la probabilita di subire maggior numero di attacchi. </p>
+		</div>
+		<div class="row">
+				<tspan style="text-align: center; margin: 0 auto; display: block; padding-bottom: 14px; padding-top: 14px;">MAPPA DENSITA' ATTACCHI</tspan>
+				<div id="pulsanti">
+  			   		<div>
+  			  			<input type="radio" name="scelta_status" value="T">
+  			  			<label for = "T">Tutti</label>
+  			  		</div><div>
+  			  			<input type="radio" name="scelta_status" value="F">
+  			  			<label for = "F">Liberi</label>
+  			  		</div><div>
+  			  			<input type="radio" name="scelta_status" value="PF"> 
+  			  			<label for = "PF">Parzialmente Liberi</label>
+  			  		</div><div>
+  			  			<input type="radio" name="scelta_status" value="NF"> 
+  			  			<label for = "NF">Non Liberi</label>
+  			 		</div>
+  			 </div>
+	
+  			<div class="graph-box" id="world-map"> </div>
+	
+  			<div class="graph-box" id="container"></div>
+	
+  			<div class="graph-box" id="container2"></div>
+	
+  			<div class="graph-box"> <div id="correlation">
+  				<table class="rwd-table">
+					<th colspan="2">Correlazione tra totale attachi ricevuti da un paese ed il suo indice di libertà</th>
+					
+					<th>Civili Liberties</th>
+					<th>Political Rights</th>
+					</tr>
+					<tr><td rowspan="3">Rho di Spearman</td><td>Coefficente di correlazione</td><td>-,349</td><td>-	,367</td></tr>
+					<tr><td>Sign.(a due code)</td><td>.000</td><td>.000</td></tr>
+					<tr><td>N</td><td colspan="3">149</td></tr>
+				</table>
+  			</div></div>
+
+  		</div>
+	</section>
+	 
+	
+	<footer>
+		<div class="row">
+			<p>
+			Progetto realizzato per l'esame di Laboratorio Progettazione Web, da Salvatore Ventrone (matr. 539872)
+			</p>
+		</div>
+		
+	</footer>
+
+</body>
