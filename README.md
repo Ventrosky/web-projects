@@ -1,5 +1,5 @@
 # web-projects
-University websites projects
+Websites projects made for university courses
 
 ddos-freedom/
 Gli attachi Distributed Denial of Service (DDoS) possono essere utilizzati per rendere non disponibili al mondo importanti 
