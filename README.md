@@ -9,6 +9,7 @@ avvenuti nel mondo nell’ultimo biennio (2014 – 2015) e l’indice di libert�
 approfondire e tanti dettagli da esaminare, per questioni di tempo e finalità del progetto, ho scelto di mostrare i dati di 
 uno studio quantitativo sulla correlazione tra il numero di attacchi DDoS ricevuti da un paese ed i sui indici di libertà civile 
 e diritti politici.
+link: http://wafi.iit.cnr.it/lab/LPW/progettini/20160718/ventrone/
 
 software-libero/
 Un programma libero ti da la libertà di:
@@ -19,3 +20,4 @@ Un programma libero ti da la libertà di:
 Spesso il Software Libero viene chiamato Open Source, termine che fa riferimento alla possibilità di accedere al codice sorgente, 
 ma questa è solo una precondizione per due delle quattro libertà. Il termine Software Libero evita di alimentare questa comune 
 incomprensione.
+link: http://infouma.di.unipi.it/corsi/simi/2016/Ventrone/
