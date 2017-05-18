@@ -14,11 +14,11 @@ e diritti politici.
 
 ## software-libero
 
-Un programma libero ti da la libertà di:
-0. eseguire il programma per qualsiasi scopo
-1. studiare come funziona il programma, e modificarlo per fargli fare cio che desideri
-2. redistribuire copie in modo da aiutare il prossimo
-3. distribuire copie della propria versione modificata, in modo che la comunità ne possa beneficiare
+* Un programma libero ti da la libertà di:
+  * eseguire il programma per qualsiasi scopo
+  * studiare come funziona il programma, e modificarlo per fargli fare cio che desideri
+  * redistribuire copie in modo da aiutare il prossimo
+  * distribuire copie della propria versione modificata, in modo che la comunità ne possa beneficiare
 * link: http://infouma.di.unipi.it/corsi/simi/2016/Ventrone/
 
 ## testJS
