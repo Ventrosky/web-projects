@@ -21,6 +21,12 @@ e diritti politici.
   * distribuire copie della propria versione modificata, in modo che la comunità ne possa beneficiare
 * link: http://infouma.di.unipi.it/corsi/simi/2016/Ventrone/
 
+## right-to-read
+
+Questo progetto è stato realizzato per il corso di "Codifica dei Testi" a.a. 2016/2017, si tratta della versione elettronica dell'articolo “The Right to Read" di Richard M. Stallman, pubblicato nel volume "Free Software, Free Society: Selected Essays of Richard M. Stallman". Lo schema di codifica utilizzato è stato ricavato con Tei Roma, partendo dalla base Tei Lite ed aggiungendo il modulo namesdates. Per la presentazione sono stati usati i fogli di stile XSL e CSS, mentre per lo smooth scrolling JQuery. Passando il mouse sui nomi viene visualizzato il tipo e se o meno si tratti di un abbreviazione. 
+* link: http://the-right-to-read.000webhostapp.com/project.xml
+
+
 ## testJS
 
 Just a quick script I needed for sorting and cleaning some MATLAB results and generate Excell spreadsheets
