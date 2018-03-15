@@ -30,3 +30,9 @@ Progetto realizzato per un corso di "Codifica dei Testi", si tratta della versio
 ## testJS
 
 Just a quick script I needed for sorting and cleaning some MATLAB results and generate Excell spreadsheets
+
+
+## freeCodeCamp
+
+freeCodeCamp "Front End Development Certification" projects
+* link: https://www.freecodecamp.org/ventrosky
