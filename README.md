@@ -27,12 +27,13 @@ Progetto realizzato per un corso di "Codifica dei Testi", si tratta della versio
 * link: http://the-right-to-read.000webhostapp.com/project.xml
 
 
-## testJS
-
-Just a quick script I needed for sorting and cleaning some MATLAB results and generate Excell spreadsheets
-
-
 ## freeCodeCamp
 
 freeCodeCamp "Front End Development Certification" projects
 * link: https://www.freecodecamp.org/ventrosky
+
+
+## testJS
+
+Just a quick script I needed for sorting and cleaning some MATLAB results and generate Excell spreadsheets
+
