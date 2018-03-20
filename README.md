@@ -29,7 +29,7 @@ Progetto realizzato per un corso di "Codifica dei Testi", si tratta della versio
 
 ## freeCodeCamp
 
-freeCodeCamp "Front End Development Certification" projects
+Projects for freeCodeCamp's "Front End Development Certification". Using: HTML5, CSS, Bootstrap, JavaScript, JSON APIs and Ajax.
 * link: https://www.freecodecamp.org/ventrosky
 
 
