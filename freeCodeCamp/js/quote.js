@@ -1,6 +1,5 @@
 $(document).ready(function() {
   	$("#get-quote").on("click", function(e){
-  		console.log("Click!");
 		$.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?",function(post){
 		  $('#quote-title').text(post[0].title);
 		  $('#quote-content').html(post[0].content);
