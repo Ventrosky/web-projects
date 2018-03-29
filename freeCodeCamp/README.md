@@ -10,3 +10,5 @@
   * [Show the Local Weather](https://codepen.io/BuccaneerDev/full/eMzQWL/)
   * [Build a Wikipedia Viewer](https://codepen.io/BuccaneerDev/full/dmNpJY/)
   * [Use the Twitchtv JSON API](https://codepen.io/BuccaneerDev/full/qoXeGK/)
+* Advanced:
+  * [Build a JavaScript Calculator](https://codepen.io/BuccaneerDev/full/KoQEzg/)
