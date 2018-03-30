@@ -1,4 +1,5 @@
 var memNumber = 0;
+var doRestart = false;
 
 $(document).ready(function() {
   
@@ -30,6 +31,10 @@ $(document).ready(function() {
       case "7":
       case "8":
       case "9":
+        if (doRestart){
+          reset();
+          doRestart = false;
+        }
         updateDisplay(e.target.value);
         break;
       case "+":
@@ -52,6 +57,7 @@ $(document).ready(function() {
         if ((!lastNum.includes(".")) && (!lastChar.match(/[\+\-\/\*]/gi))) updateDisplay(".");
         break;
       case "=":
+        doRestart = true;
         var lastChar = displayStr.charAt(displayStr.length-1);
         if (lastChar.match(/[\+\-\/\*]/gi)) $('#calc-screen').contents()[0].textContent = displayStr.substring(0, displayStr.length - 1);
         $('#calc-screen').contents()[0].textContent = eval($('#calc-screen').contents()[0].textContent);
