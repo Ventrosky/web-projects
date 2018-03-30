@@ -78,7 +78,6 @@ function myReplace(str, before, after) {
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 
 // ----- Pig Latin -----
-
 function translatePigLatin(str) {
   return str
     .replace(/^([aeiouy])(.*)/, '$1$2way')
