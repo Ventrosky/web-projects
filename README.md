@@ -1,5 +1,5 @@
 # web-projects
->Websites projects made for university courses
+>Websites projects made for university courses and others..
 
 ## ddos-freedom
 
