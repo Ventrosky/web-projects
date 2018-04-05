@@ -6,7 +6,6 @@ var status = "";
 $(document).ready(function() {
   function chickenDinner(board, marker){
     var winner = ((board[6] == marker && board[7] == marker && board[8] == marker) || (board[3] == marker && board[4] == marker && board[5] == marker) || (board[0] == marker && board[1] == marker && board[2] == marker) || (board[6] == marker && board[3] == marker && board[0] == marker) || (board[7] == marker && board[4] == marker && board[1] == marker) || (board[8] == marker && board[5] == marker && board[2] == marker) || (board[6] == marker && board[4] == marker && board[2] == marker) || (board[8] == marker && board[4] == marker && board[0] == marker));
-    console.log(board);
     return winner;
   }
   function rndFirst(){
@@ -18,7 +17,7 @@ $(document).ready(function() {
   }
   function addMarker(marker, pos){
     var str = "#" + (pos+1).toString();
-    $(str).css('background-image', (marker == 'X' ? 'url(img/X.png)' : 'url(img/O.png)')).css('background-repeat','no-repeat').css('background-size','100% 100%');
+    $(str).css('background-image', (marker == 'X' ? 'url(img/x.png)' : 'url(img/o.png)')).css('background-repeat','no-repeat').css('background-size','100% 100%');
   }
 
   function noMarker(board, pos){
@@ -43,15 +42,12 @@ $(document).ready(function() {
   }
   function rndMove(board, listPos){
     freePos = listPos.filter(availableMoves(board));
-    console.log(freePos);
     if (freePos.length < 1) return null;
     var rndPos = Math.floor(Math.random() * freePos.length);
-    console.log("rnd" + freePos[rndPos].toString());
     return freePos[rndPos];
   }
   function filledBoard(){
     var remains = [0,1,2,3,4,5,6,7,8].filter(availableMoves(board));
-    console.log(remains);
     if (remains.length<1){
       if (status == "") status = "Tie! ";
       return true;
@@ -107,12 +103,10 @@ $(document).ready(function() {
     }
     var pos = parseInt(e.target.id) - 1;
     if (playerMove(pos)){
-      addMarker(letter[0], pos)
-      console.log(pos);
+      addMarker(letter[0], pos);
       var p = computerMove();
       if (p != null){
         addMarker(letter[1], p);
-        console.log(p);
       }
     }
   }
@@ -140,7 +134,6 @@ $(document).ready(function() {
     if (rndFirst() == 1){
       var p = computerMove();
       addMarker(letter[1], p);
-      console.log(p);
     }
   });
   $('#board td').on("click", function(e) {
