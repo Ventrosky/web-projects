@@ -41,6 +41,7 @@ $(document).ready(function() {
       case "-":
       case "*":
       case "/":
+        if (doRestart) doRestart = false;
         if (!(lastChar.match(/[\+\-\/\*]/gi))) updateDisplay(e.target.value);
         break;
       case "a":
