@@ -70,7 +70,7 @@ $(document).ready(function() {
         doRestart = true;
         var lastChar = displayStr.charAt(displayStr.length-1);
         if (lastChar.match(/[\+\-\/\*]/gi)) $('#calc-screen').contents()[0].textContent = displayStr.substring(0, displayStr.length - 1);
-        $('#calc-screen').contents()[0].textContent = eval($('#calc-screen').contents()[0].textContent);
+        $('#calc-screen').contents()[0].textContent = math.eval($('#calc-screen').contents()[0].textContent);
     };
   });
 });
