@@ -12,4 +12,5 @@
   * 05 - [Use the Twitchtv JSON API](https://codepen.io/BuccaneerDev/full/qoXeGK/)
 * Advanced:
   * 06 - [Build a JavaScript Calculator](https://codepen.io/BuccaneerDev/full/KoQEzg/)
-  * 07 - [Build a Pomodoro Clock](https://codepen.io/BuccaneerDev/full/NYYjgo/) 
+  * 07 - [Build a Pomodoro Clock](https://codepen.io/BuccaneerDev/full/NYYjgo/)
+  * 08 - [Build a Tic Tac Toe Game](https://codepen.io/BuccaneerDev/full/eMLaQL/)
