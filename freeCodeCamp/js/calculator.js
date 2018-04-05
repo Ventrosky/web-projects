@@ -1,18 +1,21 @@
 var memNumber = 0;
 var doRestart = false;
-
 $(document).ready(function() {
-  
   function updateDisplay(n){
     var prev = $('#calc-screen').contents()[0].textContent;
-    $('#calc-screen').contents()[0].textContent = (prev == "0" ? "" : prev) + n;
+    console.log(prev);
+    if((prev == "0") && ([".","+","-","/","*"].indexOf(n)>-1)){
+      doRestart = false;
+      prev = "0"+n;
+      $('#calc-screen').contents()[0].textContent = prev;
+    } else {
+      $('#calc-screen').contents()[0].textContent = (prev == "0" ? "" : prev) + n;
+    }
   }
-
   function reset(){
     memNumber = 0;
     $('#calc-screen').contents()[0].textContent = "0";
   }
-
   $( ".btn-calc" ).on( "click", function(e) {
     console.log( "val "+ e.target.value);
     var displayStr = $('#calc-screen').contents()[0].textContent;
@@ -42,7 +45,12 @@ $(document).ready(function() {
       case "*":
       case "/":
         if (doRestart) doRestart = false;
-        if (!(lastChar.match(/[\+\-\/\*]/gi))) updateDisplay(e.target.value);
+        if (!(lastChar.match(/[\+\-\/\*]/gi))) {
+          updateDisplay(e.target.value);
+        } else if (["+","-"].indexOf(e.target.value)>-1){
+          var secondLast = displayStr.charAt(displayStr.length-2);
+          if (!(secondLast.match(/[\+\-\/\*]/gi))) updateDisplay(e.target.value);
+        }
         break;
       case "a":
         reset();
@@ -56,6 +64,7 @@ $(document).ready(function() {
         break;
       case ".":
         if ((!lastNum.includes(".")) && (!lastChar.match(/[\+\-\/\*]/gi))) updateDisplay(".");
+        if (lastChar.match(/[\+\-\/\*]/gi)) updateDisplay("0.");
         break;
       case "=":
         doRestart = true;
@@ -64,5 +73,4 @@ $(document).ready(function() {
         $('#calc-screen').contents()[0].textContent = eval($('#calc-screen').contents()[0].textContent);
     };
   });
-  
 });
