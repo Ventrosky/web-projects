@@ -3,7 +3,6 @@ var doRestart = false;
 $(document).ready(function() {
   function updateDisplay(n){
     var prev = $('#calc-screen').contents()[0].textContent;
-    console.log(prev);
     if((prev == "0") && ([".","+","-","/","*"].indexOf(n)>-1)){
       doRestart = false;
       prev = "0"+n;
@@ -17,12 +16,10 @@ $(document).ready(function() {
     $('#calc-screen').contents()[0].textContent = "0";
   }
   $( ".btn-calc" ).on( "click", function(e) {
-    console.log( "val "+ e.target.value);
     var displayStr = $('#calc-screen').contents()[0].textContent;
     var lastChar = displayStr.charAt(displayStr.length-1);
     var lastNum = displayStr.split(/[\+\-\/\*]/);
     lastNum = lastNum[lastNum.length-1];
-    console.log(lastNum);
     switch (e.target.value){
       case "0":
       case "1":
