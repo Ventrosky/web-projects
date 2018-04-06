@@ -9,7 +9,7 @@ Ho trattato questo argomento per un progetto di basi di dati universitario, il s
 avvenuti nel mondo nell’ultimo biennio (2014 – 2015) e l’indice di libertà del Paese destinazione. Ci sarebbe molto da 
 approfondire e tanti dettagli da esaminare, per questioni di tempo e finalità del progetto, ho scelto di mostrare i dati di 
 uno studio quantitativo sulla correlazione tra il numero di attacchi DDoS ricevuti da un paese ed i sui indici di libertà civile 
-e diritti politici. Using: JavaScript, PHP, MySQL, HighCharts...
+e diritti politici. Using: JavaScript, PHP, MySQL, HighCharts, jVector Map.
 * link: http://wafi.iit.cnr.it/lab/LPW/progettini/20160718/ventrone/
 
 ## software-libero
