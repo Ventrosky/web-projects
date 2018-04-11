@@ -32,8 +32,11 @@ Progetto realizzato per un corso di "Codifica dei Testi", si tratta della versio
 Projects for freeCodeCamp's "Front End Development Certification". Using: HTML5, CSS, Bootstrap, JQuery, JavaScript, JSON APIs and Ajax.
 * link: https://www.freecodecamp.org/ventrosky
 
+## mail-signature
+
+Just a simple HTML email signature template.
 
 ## testJS
 
-Just a quick script I needed for sorting and cleaning some MATLAB results and generate Excell spreadsheets
+Just a quick script I needed for sorting and cleaning some MATLAB results and generate Excell spreadsheets.
 
