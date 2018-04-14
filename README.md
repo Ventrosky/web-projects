@@ -29,7 +29,7 @@ Progetto realizzato per un corso di "Codifica dei Testi", si tratta della versio
 
 ## freeCodeCamp
 
-Projects for freeCodeCamp's "Front End Development Certification". Using: HTML5, CSS, Bootstrap, JQuery, JavaScript, JSON APIs and Ajax.
+Projects for freeCodeCamp's "[Front End Development Certification](https://www.freecodecamp.org/ventrosky/front-end-certification)". Using: HTML5, CSS, Bootstrap, JQuery, JavaScript, JSON APIs and Ajax.
 * link: https://www.freecodecamp.org/ventrosky
 
 ## coderdojo29_pi_ap
