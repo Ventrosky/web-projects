@@ -29,7 +29,9 @@ Progetto realizzato per un corso di "Codifica dei Testi", si tratta della versio
 
 ## freeCodeCamp
 
-Projects for freeCodeCamp's "[Front End Development Certification](https://www.freecodecamp.org/ventrosky/front-end-certification)". Using: HTML5, CSS, Bootstrap, JQuery, JavaScript, JSON APIs and Ajax.
+Projects for freeCodeCamp's "[Front End Development Certification](https://www.freecodecamp.org/ventrosky/front-end-certification)". 
+* Projects: [Build a Tribute Page](https://codepen.io/BuccaneerDev/full/VXYorJ/), [Build a Personal Portfolio](https://codepen.io/BuccaneerDev/full/YaypqP/), [Build a Random Quote Machine](https://codepen.io/BuccaneerDev/full/OvNRre/), [Show the Local Weather](https://codepen.io/BuccaneerDev/full/eMzQWL/), [Build a Wikipedia Viewer](https://codepen.io/BuccaneerDev/full/dmNpJY/), [Use the Twitchtv JSON API](https://codepen.io/BuccaneerDev/full/qoXeGK/), [Build a JavaScript Calculator](https://codepen.io/BuccaneerDev/full/KoQEzg/), [Build a Pomodoro Clock](https://codepen.io/BuccaneerDev/full/NYYjgo/), [Build a Tic Tac Toe Game](https://codepen.io/BuccaneerDev/full/eMLaQL/), [Build a Simon Game](https://codepen.io/BuccaneerDev/full/MVMbVz/)
+* Using: HTML5, CSS, Bootstrap, JQuery, JavaScript, JSON APIs and Ajax.
 * link: https://www.freecodecamp.org/ventrosky
 
 ## coderdojo29_pi_ap
