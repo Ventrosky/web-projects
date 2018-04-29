@@ -44,6 +44,7 @@ Web page for the raspberry pi, configured as access point, used during the Pisa 
 
 Application I have built while reading the book [The Road to Learn React](https://www.robinwieruch.de/the-road-to-learn-react/).
 * Using: ReactJS, Javascript ES6 & Sass.
+* Link: https://hackernews-buccdev.herokuapp.com/
 
 ## mail-signature
 
