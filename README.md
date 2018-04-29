@@ -39,6 +39,12 @@ Projects for freeCodeCamp's "Front End Development Certification".
 Web page for the raspberry pi, configured as access point, used during the Pisa CoderDojo. Here kids can download the installaton files for the Scratch 2 Editor Offline and also contains one of the daily activities: "Scratch Dices", where the objective is to make a story/scene using random snippets of code and sprites.
 * activity demo: https://codepen.io/BuccaneerDev/full/LdvKmm/
 
+
+## hackernews-client
+
+Application I have built while reading the book [The Road to Learn React](https://www.robinwieruch.de/the-road-to-learn-react/).
+* Using: ReactJS, Javascript ES6 & Sass.
+
 ## mail-signature
 
 Just a simple HTML email signature template.
