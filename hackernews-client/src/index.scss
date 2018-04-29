@@ -1,0 +1,60 @@
+$textcolor:#222;
+$bgcolor: #f4f4f4;
+$bordercolor: #dddddd;
+$btncolor: #808080;
+$btncolorh:#222;
+$myradius: 5px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box; 
+}
+
+@mixin my-border($radius) {
+  padding: 10px;
+  @include border-radius($radius);
+  border: 1px solid $bordercolor;
+}
+
+body {
+  color: $textcolor;
+  background: $bgcolor;
+  font: 400 14px CoreSans, Arial, sans-serif;
+}
+
+a {
+  &:visited {
+    color: $textcolor;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  @include my-border($myradius);
+  outline: none;
+  margin-right: 10px;
+}
+
+button {
+  @include my-border($myradius);
+  background: transparent;
+  color: $btncolor;
+  cursor: pointer;
+  
+  &:hover{
+    color:$btncolorh;
+  }
+}
+
+*:focus {
+  outline: none;
+}
