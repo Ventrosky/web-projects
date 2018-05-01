@@ -34,6 +34,13 @@ Projects for freeCodeCamp's "Front End Development Certification".
 * Using: HTML5, CSS, Bootstrap, JQuery, JavaScript, JSON APIs and Ajax.
 * fCC Profile: https://www.freecodecamp.org/ventrosky
 
+## fcc-react-prjs
+
+ReactJS Projects, for freeCodeCamp's "Data Visualization Certification". 
+* Projects: [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/)
+* Using: ReactJS and Sass. 
+* fCC Profile: https://www.freecodecamp.org/ventrosky
+
 ## coderdojo29_pi_ap
 
 Web page for the raspberry pi, configured as access point, used during the Pisa CoderDojo. Here kids can download the installaton files for the Scratch 2 Editor Offline and also contains one of the daily activities: "Scratch Dices", where the objective is to make a story/scene using random snippets of code and sprites.
