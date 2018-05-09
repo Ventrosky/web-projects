@@ -26,7 +26,6 @@ e diritti politici. Using: JavaScript, JQuery, PHP, MySQL, HighCharts, jVector M
 Progetto realizzato per un corso di "Codifica dei Testi", si tratta della versione elettronica dell'articolo “The Right to Read" di Richard M. Stallman, pubblicato nel volume "Free Software, Free Society: Selected Essays of Richard M. Stallman". Lo schema di codifica utilizzato è stato ricavato con Tei Roma, partendo dalla base Tei Lite ed aggiungendo il modulo namesdates. Per la presentazione sono stati usati i fogli di stile XSL e CSS, mentre per lo smooth scrolling JQuery. Passando il mouse sui nomi viene visualizzato il tipo e se o meno si tratti di un abbreviazione. 
 * link: http://the-right-to-read.000webhostapp.com/project.xml
 
-
 ## freeCodeCamp
 
 Projects for freeCodeCamp's "Front End Development Certification". 
@@ -46,12 +45,17 @@ React Projects, for freeCodeCamp's "Data Visualization Certification".
 Web page for the raspberry pi, configured as access point, used during the Pisa CoderDojo. Here kids can download the installaton files for the Scratch 2 Editor Offline and also contains one of the daily activities: "Scratch Dices", where the objective is to make a story/scene using random snippets of code and sprites.
 * activity demo: https://codepen.io/BuccaneerDev/full/LdvKmm/
 
-
 ## hackernews-client
 
 Application I have built while reading the book [The Road to Learn React](https://www.robinwieruch.de/the-road-to-learn-react/).
 * Using: ReactJS, Javascript ES6 & Scss.
 * Link: https://hackernews-buccdev.herokuapp.com/
+
+## salvatoreventr.one
+
+My personal resume page.
+* Using: Javascript, jQuery, Bootstrap, HTML5 & CSS.
+* Link: https://salvatoreventr.one/
 
 ## mail-signature
 
