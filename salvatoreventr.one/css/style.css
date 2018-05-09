@@ -1,0 +1,557 @@
+
+body {
+    font-family : 'Hind', sans-serif;
+    font-size   : 18px;
+    line-height : 1.8em;
+    color       : #7e7c7c;
+    font-weight : 300;
+    background  : #f8f8f8;
+    }
+
+/* --------------------------------------
+ * Global Typography
+ *------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin : 0 0 15px;
+    color  : #444444;
+    }
+
+h1 {
+    font-size   : 36px;
+    line-height : 1.8em;
+    font-weight : 700;
+    }
+
+h2 {
+    font-size   : 21px;
+    line-height : 1.8em;
+    font-weight : 700;
+    }
+
+h3 {
+    font-size   : 16px;
+    line-height : 1.8em;
+    font-weight : 700;
+    }
+
+h4 {
+    font-size   : 18px;
+    line-height : 1.8em;
+    font-weight : 500;
+    }
+
+h5 {
+    font-size   : 18px;
+    line-height : 1.5em;
+    font-weight : 500;
+    }
+
+h6 {
+    font-size   : 18px;
+    line-height : 1.5em;
+    }
+
+/* --------------------------------------
+ * LINK STYLE
+ *------------------------------------------*/
+a {
+    color              : #BD5532;
+    text-decoration    : none;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    transition         : all 0.3s ease 0s;
+    }
+
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration : none;
+    outline         : none
+    }
+
+a:hover,
+a:focus {
+    text-decoration : none;
+    color           : #BD5532;
+    }
+
+.blackcert:hover ,
+.blackcert:focus  {
+    color:#444444 !important;
+}
+.blackcert,
+.blackcert:visited {
+    color:#7e7c7c !important;
+}
+
+p {
+    margin-bottom : 20px;
+    }
+
+strong {
+    color : #444444;
+    }
+
+ul {
+    margin     : 0;
+    padding    : 0;
+    list-style : none;
+    }
+
+/*------------------
+ * Button Style
+ *------------------*/
+.btn {
+    padding        : 14px 30px 11px;
+    margin-bottom  : 0;
+    font-size      : 14px;
+    font-weight    : 500;
+    border-radius  : 0;
+    border         : 0;
+    text-transform : uppercase;
+    transition     : all .3s;
+    }
+
+.btn-lg {
+    font-weight : 700;
+    font-size   : 24px;
+    padding     : 15px 30px;
+    }
+
+/*btn-primary*/
+.btn-primary {
+    background-color : #BD5532;
+    }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:focus {
+    background : #9E4324;
+    }
+
+/*btn-default*/
+.btn-default {
+    color            : #2a54f5;
+    background-color : transparent;
+    border           : 2px solid #2a54f5;
+    }
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active:focus {
+    background   : #2a54f5;
+    color        : #ffffff;
+    border-color : #2a54f5;
+    }
+
+button:focus,
+.btn:focus,
+.btn:active:focus {
+    outline : none;
+    }
+
+/* --------------------
+ *  main Wrapper
+ * -------------------*/
+#main-wrapper {
+    overflow : hidden;
+    }
+
+/*-------------------
+ * Section Wrapper
+ *-------------------*/
+.section-wrapper {
+    padding : 50px 0;
+    }
+
+@media (max-width : 768px) {
+    .section-wrapper {
+        padding : 20px 0;
+        }
+    }
+
+@media (max-width : 600px){
+    .section-wrapper {
+        padding : 20px;
+        }
+    }
+
+/*---------------------------
+ * Section Title
+ *---------------------------*/
+.section-title {
+    margin-right : 30px;
+    text-align   : right;
+    }
+
+.section-title h2 {
+    font-size      : 14px;
+    margin-bottom  : 5px;
+    color          : #BD5532;
+    text-transform : uppercase;
+    }
+
+@media (max-width: 768px) {
+    .section-title{
+        text-align: left;
+        }
+    .section-title h2{
+        font-size: 18px;
+        margin-bottom: 20px;
+        }
+    }
+
+/*-----------------------------
+ * NAVIGATION & HEADER STYLE
+ *-----------------------------*/
+
+.header {
+    padding    : 50px 0;
+    margin     : 0;
+    position   : relative;
+    border-top : 5px solid #BD5532;
+    }
+
+.header .profile-img {
+    margin-right : 30px;
+    }
+
+.header .name-wrapper {
+    margin-bottom : 30px;
+    }
+
+.header .name-wrapper h1 {
+    text-transform : uppercase;
+    line-height    : 1;
+    margin         : 0 0 5px;
+    }
+
+.header .name-wrapper span {
+    font-size : 24px;
+    color     : #BD5532;
+    }
+
+.header .personal-details {
+    margin : 10px 0;
+    }
+
+.header .personal-details strong {
+    font-size   : 13px;
+    color       : #444444;
+    display     : block;
+    line-height : 1;
+    }
+
+.header .personal-details small {
+    font-size : 12px;
+    }
+
+.header .personal-details span {
+    color : #989898;
+    }
+
+@media (max-width : 768px) {
+    .header {
+        padding    : 20px 0;
+        }
+
+    .header .profile-img {
+        margin: 0 0 30px;
+        }
+    }
+
+@media (max-width : 600px){
+    .header{
+        padding: 20px;
+        }
+    }
+
+
+    /*-------------------
+     * Social Icon
+     *-------------------*/
+
+.social-icon {
+    margin  : 20px 0;
+    padding : 0;
+    display : block;
+    }
+
+.social-icon li {
+    display : inline-block;
+    margin  : 0 2px;
+    }
+
+.social-icon li a {
+    display       : block;
+    font-size     : 16px;
+    font-weight   : bolder;
+    color         : #904126;
+    width         : 82px;
+    height        : 34px;
+    line-height   : 33px;
+    text-align    : center;
+    border-radius : 2px;
+    border        : 2px solid #eeeeee;
+    }
+
+.social-icon li a:hover {
+    border-color : #cccccc;
+    }
+
+
+/*-------------------
+ * Expertise
+ *-------------------*/
+.item-stats .item-stats-value{
+    font-size: 18px;
+    color: #444;
+    font-weight: 500;
+    }
+
+.item-stats .item-stats-name{
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1;
+    }
+
+
+@media (max-width: 768px) {
+    .item-stats{
+        margin-bottom: 30px;
+        }
+    }
+
+/*-------------------
+ * Expertise
+ *-------------------*/
+.expertise-item {
+    margin-bottom : 20px;
+    }
+
+.expertise-item h3 {
+    text-transform : uppercase;
+    margin-bottom  : 5px;
+    }
+
+/*-------------------
+ * Skills Progressbar
+ *-------------------*/
+
+.progress-item {
+    position : relative;
+    }
+
+.progress-item .progress-title {
+    font-size     : 15px;
+    font-weight   : 400;
+    display       : inline-block;
+    margin-bottom : 5px;
+    }
+
+.progress-item .progress {
+    height        : 2px;
+    box-shadow    : none;
+    border-radius : 0;
+    background    : transparent;
+    }
+
+.progress-item .progress-bar {
+    background-color : #BD5532;
+    box-shadow       : none;
+    text-align       : right;
+    }
+
+.progress-item .progress-percent {
+    font-size        : 10px;
+    background-color : #dedede;
+    position         : absolute;
+    top              : 5px;
+    padding          : 0 3px;
+    border-radius    : 3px;
+    color: #0b0a0a;
+    }
+
+.progress-item .progress-percent::before {
+    content      : "";
+    position     : absolute;
+    left         : 0;
+    bottom       : -4px;
+    border-top   : 6px solid #dedede;
+    border-right : 8px solid transparent;
+    }
+
+
+@media (max-width: 768px) {
+    .progress-wrapper{
+        margin-bottom: 50px;
+        }
+    }
+
+/*-------------------
+ * Portfolio
+ *-------------------*/
+
+.portfolio-item {
+    position      : relative;
+    display       : block;
+    margin-bottom : 30px;
+
+
+  
+
+    }
+
+.portfolio-item .portfolio-thumb img {
+    height    : auto;
+    display   : block;
+    max-width : 100%;
+}
+.portfolio-item .portfolio-info {
+    position   : absolute;
+    padding    : 15px 15px 5px;
+    bottom     : 0;
+    width      : 100%;
+    z-index    : 1;
+    background : -webkit-linear-gradient(
+            top,
+            transparent 0%,
+            rgba(0, 0, 0, 0.5) 100%
+    );
+}
+.portfolio-item::after {
+    content    : "";
+    position   : absolute;
+    bottom     : 0;
+    top        : 0;
+    left       : 0;
+    right      : 0;
+    background : -webkit-linear-gradient(
+            top,
+            transparent 0%,
+            #000 100%
+    ); 
+}
+.portfolio-item:hover{
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+}
+.portfolio-item .portfolio-info h3 {
+    margin         : 0;
+    line-height    : 1;
+    color          : #ffffff;
+    font-weight    : 500;
+    text-transform : uppercase;
+}
+.portfolio-item .portfolio-info small {
+    color : rgba(255, 255, 255, .5);
+}
+
+@media (max-width: 768px) {
+    .portfolio-item{
+        max-width: 580px;
+        }
+    }           
+
+/*-------------------
+ * Content Item
+ *-------------------*/
+
+.content-item {
+    margin-bottom : 40px;
+    }
+
+.content-item h3 {
+    margin         : 0 0 10px;
+    line-height    : 1;
+    font-weight    : bold;
+    text-transform : uppercase;
+    }
+
+.content-item h4 {
+    margin      : 0;
+    line-height : 1;
+    }
+
+.content-item small {
+    color : #888888;
+    }
+
+/*-------------------
+ * Contact
+ *-------------------*/
+
+.section-contact address strong {
+    font-size      : 13px;
+    text-transform : uppercase;
+    }
+
+.feedback-form {
+    margin-top : 50px;
+    }
+
+/* Copyright */
+
+.footer {
+    padding : 30px 0;
+    text-align : right;
+    }
+
+.footer .copyright-section {
+    font-size  : 13px;
+    }
+
+.footer .copyright-section .copytext {
+    font-weight : 400;
+    display     : block;
+    }
+
+@media (max-width : 768px) {
+    .footer {
+        text-align: left;
+        }
+    }
+
+@media (max-width : 600px){
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+    }
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+#preloader {
+    background : #ccc;
+    bottom     : 0;
+    left       : 0;
+    position   : fixed;
+    right      : 0;
+    top        : 0;
+    z-index    : 9999;
+    }
+
+#status,
+.status-mes {
+    background-image    : url(../img/puff.svg);
+    background-position : center;
+    background-repeat   : no-repeat;
+    height              : 200px;
+    left                : 50%;
+    margin              : -100px 0 0 -100px;
+    position            : absolute;
+    top                 : 50%;
+    width               : 200px;
+    }
+
+.status-mes {
+    background : none;
+    left       : 0;
+    margin     : 0;
+    text-align : center;
+    top        : 65%;
+    }
