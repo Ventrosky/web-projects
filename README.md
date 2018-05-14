@@ -63,5 +63,5 @@ Just a simple HTML email signature template.
 
 ## testJS
 
-Just a quick script I needed for sorting and cleaning some MATLAB results and generate Excell spreadsheets.
+Quick script I needed for sorting and cleaning some MATLAB results and generate Excell spreadsheets. And some other tests.
 
