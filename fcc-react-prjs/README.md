@@ -3,3 +3,5 @@
 
 ## React Projects:
 * [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/)
+* [Build a Camper Leaderboard](https://codepen.io/BuccaneerDev/full/wjyWmX/)
+* [Build a Recipe Box](https://codepen.io/BuccaneerDev/full/mLGymP/)
