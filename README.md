@@ -36,7 +36,7 @@ Projects for freeCodeCamp's "Front End Development Certification".
 ## fcc-react-prjs
 
 React Projects, part of the freeCodeCamp's "Data Visualization Certification" required projects. 
-* Projects: [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/), [Build a Camper Leaderboard](https://codepen.io/BuccaneerDev/full/wjyWmX/)
+* Projects: [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/), [Build a Camper Leaderboard](https://codepen.io/BuccaneerDev/full/wjyWmX/), [Build a Recipe Box](https://codepen.io/BuccaneerDev/full/mLGymP/)
 * Using: ReactJS and Sass. 
 * fCC Profile: https://www.freecodecamp.org/ventrosky
 
