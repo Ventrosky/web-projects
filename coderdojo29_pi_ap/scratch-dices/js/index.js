@@ -4,7 +4,7 @@ const baseURL = "https://raw.githubusercontent.com/Ventrosky/web-projects/master
 function loadResults(){
     let placeHolder = [3,"dado-0.png","dado-0.png","dado-0.png","dado-0.png","dado-0.png","dado-0.png"];
     let itemsArray = localStorage.getItem('_BuccaneerDev_dices') ? JSON.parse(localStorage.getItem('_BuccaneerDev_dices')) : placeHolder;
-    results = {dices: itemsArray.splice(-1,1), chance: parseInt(itemsArray[0])};
+    results = {dices: itemsArray.slice(-1,1), chance: parseInt(itemsArray[0])};
     console.log(itemsArray);
     let i =1;
     $('td:first-child').each(function() {
