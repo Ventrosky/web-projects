@@ -18,7 +18,6 @@ function saveResults(){
   let itemsArray = [  results.chance, ...results.dices];
   console.log(itemsArray);
   localStorage.setItem('_BuccaneerDev_dices', JSON.stringify(itemsArray));
-  //results = { chance: results.chance, dices: itemsArray};
 }
 
 function rngDice(){
