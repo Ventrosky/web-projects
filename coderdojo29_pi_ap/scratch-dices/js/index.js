@@ -5,7 +5,6 @@ function loadResults(){
     let placeHolder = [3,"dado-0.png","dado-0.png","dado-0.png","dado-0.png","dado-0.png","dado-0.png"];
     let itemsArray = localStorage.getItem('_BuccaneerDev_dices') ? JSON.parse(localStorage.getItem('_BuccaneerDev_dices')) : placeHolder;
     results = {dices: itemsArray.slice(-1,1), chance: parseInt(itemsArray[0])};
-    console.log(itemsArray);
     let i =1;
     $('td:first-child').each(function() {
         $(this).children(":first").attr('src',baseURL+itemsArray[i]);
@@ -16,7 +15,6 @@ function loadResults(){
 
 function saveResults(){
   let itemsArray = [  results.chance, ...results.dices];
-  console.log(itemsArray);
   localStorage.setItem('_BuccaneerDev_dices', JSON.stringify(itemsArray));
 }
 
