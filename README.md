@@ -43,7 +43,7 @@ React Projects, part of the freeCodeCamp's "Data Visualization Certification" re
 
 ## coderdojo29_pi_ap
 
-Web page for the raspberry pi, configured as access point, used during the Pisa CoderDojo. Here kids can download the installaton files for the Scratch 2 Editor Offline and also contains one of the daily activities: "Scratch Dices", where the objective is to make a story/scene using random snippets of code and sprites.
+Web page for the raspberry pi, configured as access point, used during the Pisa CoderDojo. Here kids can download the installaton files for the Scratch 2 Editor Offline and also contains one of the daily activities: "Scratch Dices", where the objective is to make a story/scene/game using random snippets of code and sprites.
 * activity demo: https://codepen.io/BuccaneerDev/full/LdvKmm/
 
 ## hackernews-client
