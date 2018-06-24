@@ -1,8 +1,11 @@
 var URL = "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/";
 var dataset, years;
 var barPadding = 1;
-var svgH = 500,
-    svgW = 1000;
+
+const svgW = document.getElementById('viewChart').offsetWidth;
+const adjH = svgW * 400 / 1000;
+const svgH = adjH < 400 ? 400 : adjH ;
+
 var margin = { top: 30, right: 50, bottom: 30, left: 50 },
     w = svgW - margin.left - margin.right,
     h = svgH - margin.top - margin.bottom;
