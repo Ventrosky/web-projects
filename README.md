@@ -34,6 +34,13 @@ Projects for freeCodeCamp's *"Front End Development Certification"*.
 * Using: **HTML5**, **CSS**, **Bootstrap**, **JQuery**, **JavaScript**, **JSON APIs** and **Ajax**.
 * fCC Profile: https://www.freecodecamp.org/ventrosky
 
+## fcc-data-viz
+
+D3 Projects, for the freeCodeCamp's *"Data Visualization Certification"*. 
+* Projects: [Visualize Data with a Bar Chart](https://codepen.io/BuccaneerDev/full/JZZezR/)
+* Using: **D3JS**, **Bootstrap** and **CSS**. 
+* fCC Profile: https://www.freecodecamp.org/ventrosky
+
 ## fcc-react-prjs
 
 React Projects, part of the freeCodeCamp's *"Legacy Data Visualization Projects"* required projects. 
