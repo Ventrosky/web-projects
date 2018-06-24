@@ -53,7 +53,7 @@ d3.json(URL + "GDP-data.json", function (json) {
     var yPos = parseFloat(d3.select(this).attr("y")) / 2 + h / 2;
 
     tooltip.style('opacity', .9);
-    tooltip.html(years[i] + '<br>' + '$' + d[1].toFixed(1).replace(/(\d)(?=(\d{3})+\.)/g, '$1,') + ' Billion').attr('data-date', d[0]).style('left', i * w / dataset.length - barPadding + 'px').style('top', yPos + 'px').style('transform', 'translateX(60px)');
+    tooltip.html(d[0] + '<br>' + '$' + d[1].toFixed(1).replace(/(\d)(?=(\d{3})+\.)/g, '$1,') + ' Billion').attr('data-date', d[0]).style('left', i * w / dataset.length - barPadding + 'px').style('top', yPos + 'px').style('transform', 'translateX(60px)');
   }).on("mouseout", function () {
     tooltip.style('opacity', 0);
   });
