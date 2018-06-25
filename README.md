@@ -55,7 +55,7 @@ D3 Projects, for the freeCodeCamp's *"Data Visualization Certification"*.
 
 ## fcc-react-prjs
 
-React Projects, part of the freeCodeCamp's *"Legacy Data Visualization Projects"* required projects. 
+React Projects, part of the freeCodeCamp's *"Legacy Data Visualization Projects"*. 
 * Projects: 
   * [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/)
   * [Build a Camper Leaderboard](https://codepen.io/BuccaneerDev/full/wjyWmX/)
