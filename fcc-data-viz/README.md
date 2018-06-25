@@ -5,7 +5,7 @@ fCC Profile: https://www.freecodecamp.org/ventrosky
 
 ## Projects: 
 
-* scatterplot-graph:  [Visualize Data with a Bar Chart](https://codepen.io/BuccaneerDev/full/JZZezR/)
-* us-gdp-bar-chart:   [Visualize Data With A Scatterplot Graph](https://codepen.io/BuccaneerDev/full/XYBzmo/)
+* us-gdp-bar-chart:   [Visualize Data with a Bar Chart](https://codepen.io/BuccaneerDev/full/JZZezR/)
+* scatterplot-graph:  [Visualize Data With A Scatterplot Graph](https://codepen.io/BuccaneerDev/full/XYBzmo/)
 
 
