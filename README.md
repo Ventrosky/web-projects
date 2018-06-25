@@ -30,7 +30,8 @@ Progetto realizzato per un corso di *Codifica dei Testi*, si tratta della versio
 ## freeCodeCamp
 
 Projects for freeCodeCamp's *"Front End Development Certification"*. 
-* Projects: [Build a Tribute Page](https://codepen.io/BuccaneerDev/full/VXYorJ/)
+* Projects:
+  * [Build a Tribute Page](https://codepen.io/BuccaneerDev/full/VXYorJ/)
   * [Build a Personal Portfolio](https://codepen.io/BuccaneerDev/full/YaypqP/)
   * [Build a Random Quote Machine](https://codepen.io/BuccaneerDev/full/OvNRre/)
   * [Show the Local Weather](https://codepen.io/BuccaneerDev/full/eMzQWL/)
