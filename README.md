@@ -37,7 +37,9 @@ Projects for freeCodeCamp's *"Front End Development Certification"*.
 ## fcc-data-viz
 
 D3 Projects, for the freeCodeCamp's *"Data Visualization Certification"*. 
-* Projects: [Visualize Data with a Bar Chart](https://codepen.io/BuccaneerDev/full/JZZezR/)
+* Projects: 
+ ** [Visualize Data with a Bar Chart](https://codepen.io/BuccaneerDev/full/JZZezR/)
+ ** [Visualize Data With A Scatterplot Graph](https://codepen.io/BuccaneerDev/full/XYBzmo/)
 * Using: **D3JS**, **Bootstrap** and **CSS**. 
 * fCC Profile: https://www.freecodecamp.org/ventrosky
 
