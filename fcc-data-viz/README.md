@@ -8,5 +8,5 @@ fCC Profile: https://www.freecodecamp.org/ventrosky
 * us-gdp-bar-chart:   [Visualize Data with a Bar Chart](https://codepen.io/BuccaneerDev/full/JZZezR/)
 * scatterplot-graph:  [Visualize Data With A Scatterplot Graph](https://codepen.io/BuccaneerDev/full/XYBzmo/)
 * heat-map:           [Visualize Data with a Heat Map](https://codepen.io/BuccaneerDev/full/rKZvwa/)
-
+* choropleth-map:     [Visualize Data with a Choropleth Map](https://codepen.io/BuccaneerDev/full/bKmoZd/)
 
