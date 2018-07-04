@@ -52,6 +52,7 @@ D3 Projects, for the freeCodeCamp's *"Data Visualization Certification"*.
   * [Visualize Data With A Scatterplot Graph](https://codepen.io/BuccaneerDev/full/XYBzmo/)
   * [Visualize Data with a Heat Map](https://codepen.io/BuccaneerDev/full/rKZvwa/)
   * [Visualize Data with a Choropleth Map](https://codepen.io/BuccaneerDev/full/bKmoZd/)
+  * [Visualize Data with a Treemap Diagram](https://codepen.io/BuccaneerDev/full/jKdGPK/)
 * Using: **D3JS**, **Bootstrap** and **CSS**. 
 * fCC Profile: https://www.freecodecamp.org/ventrosky
 
