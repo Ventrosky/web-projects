@@ -1,5 +1,5 @@
 # fcc-data-viz
->D3 Projects, for the freeCodeCamp's *"Data Visualization Certification"*. Using: **D3JS**, **Bootstrap** and **CSS**. 
+>D3 Projects, for the freeCodeCamp's [*"Data Visualization Certification"*](https://www.freecodecamp.org/certification/ventrosky/data-visualization). Using: **D3JS**, **Bootstrap** and **CSS**. 
 
 fCC Profile: https://www.freecodecamp.org/ventrosky
 
@@ -9,4 +9,4 @@ fCC Profile: https://www.freecodecamp.org/ventrosky
 * scatterplot-graph:  [Visualize Data With A Scatterplot Graph](https://codepen.io/BuccaneerDev/full/XYBzmo/)
 * heat-map:           [Visualize Data with a Heat Map](https://codepen.io/BuccaneerDev/full/rKZvwa/)
 * choropleth-map:     [Visualize Data with a Choropleth Map](https://codepen.io/BuccaneerDev/full/bKmoZd/)
-
+* treemap-diagram:    [Visualize Data with a Treemap Diagram](https://codepen.io/BuccaneerDev/full/jKdGPK/)
