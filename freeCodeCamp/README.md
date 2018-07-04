@@ -1,5 +1,5 @@
 # freeCodeCamp
->Projects for freeCodeCamp's ["Front End Development Certification"](https://www.freecodecamp.org/ventrosky/front-end-certification). Using: HTML5, CSS, Bootstrap, jQuery, JavaScript, JSON APIs and Ajax. fCC Profile: https://www.freecodecamp.org/ventrosky
+>Projects for freeCodeCamp's ["Front End Development Certification"](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end). Using: HTML5, CSS, Bootstrap, jQuery, JavaScript, JSON APIs and Ajax. fCC Profile: https://www.freecodecamp.org/ventrosky
 
 ## Front End Development Projects:
 * Basic:
