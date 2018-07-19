@@ -45,6 +45,10 @@ d3.json(URL+VIDEOGAME_DATA, function(data) {
 
   treemapLayout(root);
   
+  
+  var categs = root.leaves().map((n)=> n.data.category);
+  categs = categs.filter((cat, i, self) => self.indexOf(cat)===i)
+  
   var cell = svg.selectAll("g")
     .data(root.leaves())
     .enter()
@@ -59,7 +63,7 @@ d3.json(URL+VIDEOGAME_DATA, function(data) {
     .attr('data-name', (d)=> d.data.name)
     .attr('data-category', (d)=> d.data.category)
     .attr('data-value', (d)=> d.data.value)
-    .attr("fill", (d) => color(d.parent.data.id))
+    .attr("fill", (d)=> color(d.parent.data.name))
     .on("mouseover", function(d) { 
         d3.select(this).attr("stroke","gray");
         tooltip.style('opacity', .9);
@@ -83,8 +87,6 @@ d3.json(URL+VIDEOGAME_DATA, function(data) {
     .text((d) => d)
     .style("font-size","12px");
   
-  var categs = root.leaves().map((n)=> n.data.category);
-  categs = categs.filter((cat, i, self) => self.indexOf(cat)===i)
   
   var nElemRow = 9;
   

@@ -36,6 +36,13 @@ d3.json(URL + VIDEOGAME_DATA, function (data) {
 
   treemapLayout(root);
 
+  var categs = root.leaves().map(function (n) {
+    return n.data.category;
+  });
+  categs = categs.filter(function (cat, i, self) {
+    return self.indexOf(cat) === i;
+  });
+
   var cell = svg.selectAll("g").data(root.leaves()).enter().append("g").attr("transform", function (d) {
     return "translate(" + d.x0 + "," + d.y0 + ")";
   });
@@ -53,7 +60,7 @@ d3.json(URL + VIDEOGAME_DATA, function (data) {
   }).attr('data-value', function (d) {
     return d.data.value;
   }).attr("fill", function (d) {
-    return color(d.parent.data.id);
+    return color(d.parent.data.name);
   }).on("mouseover", function (d) {
     d3.select(this).attr("stroke", "gray");
     tooltip.style('opacity', .9);
@@ -70,13 +77,6 @@ d3.json(URL + VIDEOGAME_DATA, function (data) {
   }).text(function (d) {
     return d;
   }).style("font-size", "12px");
-
-  var categs = root.leaves().map(function (n) {
-    return n.data.category;
-  });
-  categs = categs.filter(function (cat, i, self) {
-    return self.indexOf(cat) === i;
-  });
 
   var nElemRow = 9;
 
