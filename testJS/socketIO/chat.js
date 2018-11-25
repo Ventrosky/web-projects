@@ -12,5 +12,9 @@ io.on('connection', socket => {
     socket.emit('messageFromServer', {data: "Welcome to socket.io Server"});
     socket.on('messageToServer', dataFC => {
         console.log(dataFC);
+    });
+    socket.on('newMsgToServer', msg => {
+        //console.log(msg);
+        io.emit('messageToClients', {text: msg.text});
     })
 })
