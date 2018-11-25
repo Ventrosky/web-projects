@@ -15,6 +15,12 @@ io.on('connection', socket => {
     });
     socket.on('newMsgToServer', msg => {
         //console.log(msg);
-        io.emit('messageToClients', {text: msg.text});
+        //io.emit('messageToClients', {text: msg.text});
+        io.of('/').emit('messageToClients', {text: msg.text});
     })
+})
+
+io.of('/admin').on('connection', socket => {
+    console.log("Someone connected to admin namespace")
+    io.of('/admin').emit('welcome', "Welcome to the admin namespace!");
 })
