@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    </head>
+    <body>
+        <h1>Testing from Chat.html</h1>
+
+        <script>
+            const socket = io('http://localhost:9009');
+            socket.on('connect',()=> {
+                console.log(socket.id);
+            })
+            socket.on('messageFromServer', dataFS => {
+                console.log(dataFS);
+                socket.emit('messageToServer', {data: 'Data From Client!'});
+            })
+            socket.on('ping', () => {
+                console.log("Ping received from Server");
+            })
+            socket.on('pong', (latency) => {
+                console.log(latency);
+                console.log("Pong sent to the Server");
+            })
+        </script>
+    </body>
+</html>
