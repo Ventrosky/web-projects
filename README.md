@@ -89,5 +89,5 @@ Just a simple **HTML** email signature template.
 
 ## testJS
 
-Quick script I needed for sorting and cleaning some **MATLAB** results and generate Excell spreadsheets. And some other tests.
+Various small test projects. Example: Quick scripts I needed for sorting and cleaning some **MATLAB** results and generate Excell spreadsheets. 
 
