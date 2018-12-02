@@ -4,6 +4,7 @@ class Namespace{
         this.nsTitle = nsTitle;
         this.endpoint = endpoint;
         this.rooms = [];
+        this.img = img;
     }
 
     addRoom(roomObj){

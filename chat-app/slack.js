@@ -11,24 +11,35 @@ const expressServer = app.listen(9009);
 const io = socketio(expressServer);
 
 io.on('connection',(socket)=>{
-    socket.emit('messageFromServer',{data:"Welcome to the socketio server"});
-    socket.on('messageToServer',(dataFromClient)=>{
-        console.log(dataFromClient)
-    })
-    socket.on('newMessageToServer',(msg)=>{
-        // io.emit('messageToClients',{text:msg.text})
-        io.of('/').emit('messageToClients',{text:msg.text})
+    let nsData = namespaces.map(ns =>{
+        return {
+            img: ns.img,
+            endpoint: ns.endpoint
+        }
     })
 
-    setTimeout(()=>{
-        io.of('/admin').emit('welcome',"Welcome to the admin channel, from the main channel!")
-    },2000)
-
-
-
+    console.log(nsData);
+    socket.emit('nsList',nsData);
+    //socket.emit('messageFromServer',{data:"Welcome to the socketio server"});
+    //socket.on('messageToServer',(dataFromClient)=>{
+    //    console.log(dataFromClient)
+    //})
+    //socket.on('newMessageToServer',(msg)=>{
+    //    // io.emit('messageToClients',{text:msg.text})
+    //    io.of('/').emit('messageToClients',{text:msg.text})
+    //})
+    //setTimeout(()=>{
+    //    io.of('/admin').emit('welcome',"Welcome to the admin channel, from the main channel!")
+    //},2000)
 })
 
-io.of('/admin').on('connection',(socket)=>{
-    console.log("Someone connected to the admin namespace!")
-    io.of('/admin').emit('welcome',"Welcome to the admin channel!");
+namespaces.forEach((namespace) =>{
+    io.of(namespace.endpoint).on('connection',(socket)=>{
+        console.log(`${socket.it} has join ${namespace.endpoint}`);
+    })
 })
+
+//io.of('/admin').on('connection',(socket)=>{
+//    console.log("Someone connected to the admin namespace!")
+//    io.of('/admin').emit('welcome',"Welcome to the admin channel!");
+//})
