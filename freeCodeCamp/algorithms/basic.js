@@ -51,6 +51,15 @@ function titleCase(str) {
 
 titleCase("I'm a little tea pot");
 
+// ----  Slice and Splice ----  
+function frankenSplice(arr1, arr2, n) {
+  let appo = arr2.slice()
+  appo.splice(n,0,...arr1)
+  return appo
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
 // ----  Return Largest Numbers in Arrays ---- 
 function bigNum(x,y){
   return (x>y?x:y);
