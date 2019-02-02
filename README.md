@@ -77,6 +77,11 @@ Application I have built while reading the book "The Road to Learn React" by Rob
 * Using: **ReactJS**, **Javascript ES6** & **Scss**.
 * Link: https://hackernews-buccdev.herokuapp.com/
 
+## chat-app
+
+Robert Bunch's *'Socket.IO (with websockets) - the details'* Udemy course project. It' a Slack web chat application clone. 
+* Using: **Socket.io**, **JavaScript ES6**.
+
 ## salvatoreventr.one
 
 My personal resume page.
