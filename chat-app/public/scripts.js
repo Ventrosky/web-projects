@@ -1,4 +1,12 @@
-const socket = io('http://localhost:9009');
+const username = prompt("What is your username?");
+//const socket = io('http://localhost:9009');
+const socket = io('http://localhost:9009', {
+    query: {
+        username
+    }
+});
+
+let nsSocket = ""
 //const socket2 = io('http://localhost:9009/Wiki');
 //const socket3 = io('http://localhost:9009/Mozilla');
 //const socket4 = io('http://localhost:9009/Linux');
@@ -18,7 +26,8 @@ socket.on('nsList', (nsData)=>{
     Array.from(document.getElementsByClassName('namespace')).forEach(elem=>{
         elem.addEventListener('click', e =>{
             const nsEndpoint = elem.getAttribute('ns');
-            console.log(`${nsEndpoint} click`);
+            //console.log(`${nsEndpoint} click`);
+            joinNs(nsEndpoint);
         })
     });
     joinNs("/wiki");

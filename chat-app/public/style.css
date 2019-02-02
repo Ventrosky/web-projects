@@ -93,13 +93,14 @@ input {
 #messages { 
     list-style-type: none; margin: 0; padding: 0; 
     color: #3B4048;
-    max-height: 85%;
-    overflow: scroll;
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
-#messages li .user-image{
-    /* width: 50px; */
-    /* display: inline-block; */
-}
+/*#messages li .user-image{
+     width: 50px; 
+     display: inline-block; 
+}*/
 #messages li .user-message{
     margin-left: 10px;
     color: #222;
