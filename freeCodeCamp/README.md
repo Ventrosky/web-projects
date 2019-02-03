@@ -1,7 +1,8 @@
 # freeCodeCamp
->Projects for **freeCodeCamp**'s ["Front End Development Certification"](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end). Using: **HTML5**, **CSS**, **Bootstrap**, **jQuery**, **JavaScript**, **JSON APIs** and **Ajax**. fCC Profile: https://www.freecodecamp.org/ventrosky
+> fCC Profile: https://www.freecodecamp.org/ventrosky
 
 ## Front End Development Projects:
+> Projects for **freeCodeCamp**'s ["Front End Development Certification"](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end). Using: **HTML5**, **CSS**, **Bootstrap**, **jQuery**, **JavaScript**, **JSON APIs** and **Ajax**. 
 * Basic:
   * 00 - [Build a Tribute Page](https://codepen.io/BuccaneerDev/full/VXYorJ/)
   * 01 - [Build a Personal Portfolio](https://codepen.io/BuccaneerDev/full/YaypqP/)
