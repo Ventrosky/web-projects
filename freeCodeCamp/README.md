@@ -1,5 +1,5 @@
 # freeCodeCamp
->Projects for freeCodeCamp's ["Front End Development Certification"](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end). Using: HTML5, CSS, Bootstrap, jQuery, JavaScript, JSON APIs and Ajax. fCC Profile: https://www.freecodecamp.org/ventrosky
+>Projects for **freeCodeCamp**'s ["Front End Development Certification"](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end). Using: **HTML5**, **CSS**, **Bootstrap**, **jQuery**, **JavaScript**, **JSON APIs** and **Ajax**. fCC Profile: https://www.freecodecamp.org/ventrosky
 
 ## Front End Development Projects:
 * Basic:
@@ -17,4 +17,12 @@
   * 09 - [Build a Simon Game](https://codepen.io/BuccaneerDev/full/MVMbVz/)
 
 ## Responsive Web Design Projects
+> Projects part of the required projects for the freeCodeCamp's "Responsive Web Design Certification". Using: **HTML5**, **CSS**, and **Bootstrap**.
 * [Build a Survey Form](https://codepen.io/BuccaneerDev/full/YBQPWJ)
+
+## React Projects:
+> ReactJS Projects, part of the required projects for the freeCodeCamp's "Front End Libraries Certification". Using: **ReactJS** and **Sass**.
+
+* [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/)
+* [Build a Camper Leaderboard](https://codepen.io/BuccaneerDev/full/wjyWmX/)
+* [Build a Recipe Box](https://codepen.io/BuccaneerDev/full/mLGymP/)
