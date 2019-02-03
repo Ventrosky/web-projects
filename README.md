@@ -32,6 +32,7 @@ Progetto realizzato per un corso di *Codifica dei Testi*, si tratta della versio
 Projects for freeCodeCamp's [*"Front End Development Certification"*](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end). 
 * Projects:
   * [Build a Tribute Page](https://codepen.io/BuccaneerDev/full/VXYorJ/)
+  * [Build a Survey Form](https://codepen.io/BuccaneerDev/full/YBQPWJ)
   * [Build a Personal Portfolio](https://codepen.io/BuccaneerDev/full/YaypqP/)
   * [Build a Random Quote Machine](https://codepen.io/BuccaneerDev/full/OvNRre/)
   * [Show the Local Weather](https://codepen.io/BuccaneerDev/full/eMzQWL/)
