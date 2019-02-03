@@ -27,43 +27,6 @@ Progetto realizzato per l'esame di *Programmazione e Progettazione Web* (2015/16
 Progetto realizzato per un corso di *Codifica dei Testi*, si tratta della versione elettronica dell'articolo “The Right to Read" di Richard M. Stallman, pubblicato nel volume "Free Software, Free Society: Selected Essays of Richard M. Stallman". Lo schema di codifica utilizzato è stato ricavato con Tei Roma, partendo dalla base Tei Lite ed aggiungendo il modulo namesdates. Codificato con **XML**, per la presentazione sono stati usati i fogli di stile **XSL** e **CSS**, mentre per lo smooth scrolling **JQuery**. Passando il mouse sui nomi viene visualizzato il tipo e se o meno si tratti di un abbreviazione. 
 * link: http://the-right-to-read.000webhostapp.com/project.xml
 
-## freeCodeCamp
-> fCC Profile: https://www.freecodecamp.org/ventrosky
-
-### Front End Development & Responsive Web Design
-> Projects for **freeCodeCamp**'s [*"Front End Development Certification"*](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end) and "Responsive Web Design Certification". 
-* Projects:
-  * [Build a Tribute Page](https://codepen.io/BuccaneerDev/full/VXYorJ/)
-  * [Build a Survey Form](https://codepen.io/BuccaneerDev/full/YBQPWJ)
-  * [Build a Personal Portfolio](https://codepen.io/BuccaneerDev/full/YaypqP/)
-  * [Build a Random Quote Machine](https://codepen.io/BuccaneerDev/full/OvNRre/)
-  * [Show the Local Weather](https://codepen.io/BuccaneerDev/full/eMzQWL/)
-  * [Build a Wikipedia Viewer](https://codepen.io/BuccaneerDev/full/dmNpJY/)
-  * [Use the Twitchtv JSON API](https://codepen.io/BuccaneerDev/full/qoXeGK/)
-  * [Build a JavaScript Calculator](https://codepen.io/BuccaneerDev/full/KoQEzg/)
-  * [Build a Pomodoro Clock](https://codepen.io/BuccaneerDev/full/NYYjgo/)
-  * [Build a Tic Tac Toe Game](https://codepen.io/BuccaneerDev/full/eMLaQL/)
-  * [Build a Simon Game](https://codepen.io/BuccaneerDev/full/MVMbVz/)
-* Using: **HTML5**, **CSS**, **Bootstrap**, **JQuery**, **JavaScript**, **JSON APIs** and **Ajax**.
-
-### Front End Libraries
-> React Projects, for the freeCodeCamp's "Front End Libraries Certification". 
-* Projects: 
-  * [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/)
-  * [Build a Camper Leaderboard](https://codepen.io/BuccaneerDev/full/wjyWmX/)
-  * [Build a Recipe Box](https://codepen.io/BuccaneerDev/full/mLGymP/)
-* Using: **ReactJS** and **Sass**. 
-
-### Data Visualization
-> D3JS Projects, for the **freeCodeCamp**'s [*"Data Visualization Certification"*](https://www.freecodecamp.org/certification/ventrosky/data-visualization). 
-* Projects: 
-  * [Visualize Data with a Bar Chart](https://codepen.io/BuccaneerDev/full/JZZezR/)
-  * [Visualize Data With A Scatterplot Graph](https://codepen.io/BuccaneerDev/full/XYBzmo/)
-  * [Visualize Data with a Heat Map](https://codepen.io/BuccaneerDev/full/rKZvwa/)
-  * [Visualize Data with a Choropleth Map](https://codepen.io/BuccaneerDev/full/bKmoZd/)
-  * [Visualize Data with a Treemap Diagram](https://codepen.io/BuccaneerDev/full/jKdGPK/)
-* Using: **D3JS**, **Bootstrap** and **CSS**.
-
 ## coderdojo29_pi_ap
 
 Web page for the raspberry pi, configured as access point, used during the *Pisa CoderDojo*. Here kids can download the installaton files for the Scratch 2 Editor Offline and also contains one of the daily activities: "Scratch Dices", where the objective is to make a story/scene/game using random snippets of code and sprites.
