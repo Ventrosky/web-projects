@@ -28,6 +28,7 @@ Progetto realizzato per un corso di *Codifica dei Testi*, si tratta della versio
 * link: http://the-right-to-read.000webhostapp.com/project.xml
 
 ## freeCodeCamp
+> fCC Profile: https://www.freecodecamp.org/ventrosky
 
 ### Front End Development & Responsive Web Design
 > Projects for **freeCodeCamp**'s [*"Front End Development Certification"*](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end) and "Responsive Web Design Certification". 
@@ -53,8 +54,6 @@ Progetto realizzato per un corso di *Codifica dei Testi*, si tratta della versio
   * [Build a Recipe Box](https://codepen.io/BuccaneerDev/full/mLGymP/)
 * Using: **ReactJS** and **Sass**. 
 
-* fCC Profile: https://www.freecodecamp.org/ventrosky
-
 ### Data Visualization
 > D3JS Projects, for the **freeCodeCamp**'s [*"Data Visualization Certification"*](https://www.freecodecamp.org/certification/ventrosky/data-visualization). 
 * Projects: 
@@ -63,8 +62,7 @@ Progetto realizzato per un corso di *Codifica dei Testi*, si tratta della versio
   * [Visualize Data with a Heat Map](https://codepen.io/BuccaneerDev/full/rKZvwa/)
   * [Visualize Data with a Choropleth Map](https://codepen.io/BuccaneerDev/full/bKmoZd/)
   * [Visualize Data with a Treemap Diagram](https://codepen.io/BuccaneerDev/full/jKdGPK/)
-* Using: **D3JS**, **Bootstrap** and **CSS**. 
-* fCC Profile: https://www.freecodecamp.org/ventrosky
+* Using: **D3JS**, **Bootstrap** and **CSS**.
 
 ## coderdojo29_pi_ap
 
