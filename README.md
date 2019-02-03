@@ -29,7 +29,8 @@ Progetto realizzato per un corso di *Codifica dei Testi*, si tratta della versio
 
 ## freeCodeCamp
 
-Projects for **freeCodeCamp**'s [*"Front End Development Certification"*](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end) and "Responsive Web Design Certification". 
+### Front End Development & Responsive Web Design
+> Projects for **freeCodeCamp**'s [*"Front End Development Certification"*](https://www.freecodecamp.org/certification/ventrosky/legacy-front-end) and "Responsive Web Design Certification". 
 * Projects:
   * [Build a Tribute Page](https://codepen.io/BuccaneerDev/full/VXYorJ/)
   * [Build a Survey Form](https://codepen.io/BuccaneerDev/full/YBQPWJ)
@@ -44,7 +45,8 @@ Projects for **freeCodeCamp**'s [*"Front End Development Certification"*](https:
   * [Build a Simon Game](https://codepen.io/BuccaneerDev/full/MVMbVz/)
 * Using: **HTML5**, **CSS**, **Bootstrap**, **JQuery**, **JavaScript**, **JSON APIs** and **Ajax**.
 
-React Projects, part of the required projects for the freeCodeCamp's "Front End Libraries Certification". 
+### Front End Libraries
+> React Projects, part of the required projects for the freeCodeCamp's "Front End Libraries Certification". 
 * Projects: 
   * [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/)
   * [Build a Camper Leaderboard](https://codepen.io/BuccaneerDev/full/wjyWmX/)
@@ -53,9 +55,8 @@ React Projects, part of the required projects for the freeCodeCamp's "Front End 
 
 * fCC Profile: https://www.freecodecamp.org/ventrosky
 
-## fcc-data-viz
-
-D3 Projects, for the **freeCodeCamp**'s [*"Data Visualization Certification"*](https://www.freecodecamp.org/certification/ventrosky/data-visualization). 
+### Data Visualization
+> D3JS Projects, for the **freeCodeCamp**'s [*"Data Visualization Certification"*](https://www.freecodecamp.org/certification/ventrosky/data-visualization). 
 * Projects: 
   * [Visualize Data with a Bar Chart](https://codepen.io/BuccaneerDev/full/JZZezR/)
   * [Visualize Data With A Scatterplot Graph](https://codepen.io/BuccaneerDev/full/XYBzmo/)
