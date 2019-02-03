@@ -21,7 +21,7 @@
 > Projects part of the required projects for the freeCodeCamp's "Responsive Web Design Certification". Using: **HTML5**, **CSS**, and **Bootstrap**.
 * [Build a Survey Form](https://codepen.io/BuccaneerDev/full/YBQPWJ)
 
-## React Projects:
+## Front End Libraries Projects:
 > ReactJS Projects, part of the required projects for the freeCodeCamp's "Front End Libraries Certification". Using: **ReactJS** and **Sass**.
 
 * [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/)
