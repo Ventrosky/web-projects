@@ -47,7 +47,7 @@ Progetto realizzato per un corso di *Codifica dei Testi*, si tratta della versio
 * Using: **HTML5**, **CSS**, **Bootstrap**, **JQuery**, **JavaScript**, **JSON APIs** and **Ajax**.
 
 ### Front End Libraries
-> React Projects, part of the required projects for the freeCodeCamp's "Front End Libraries Certification". 
+> React Projects, for the freeCodeCamp's "Front End Libraries Certification". 
 * Projects: 
   * [Build a Markdown Previewer](https://codepen.io/BuccaneerDev/full/gzgjPM/)
   * [Build a Camper Leaderboard](https://codepen.io/BuccaneerDev/full/wjyWmX/)
