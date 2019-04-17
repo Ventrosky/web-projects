@@ -30,7 +30,7 @@ async function shutdown(e) {
     let err = e;
       
     console.log('Shutting down');
-    
+
     try {
         console.log('Closing database module');
      
@@ -79,3 +79,40 @@ async function shutdown(e) {
     shutdown(err);
   }); 
 startup();
+
+/* testing
+
+curl -X "POST" "http://localhost:3000/api/soggetti" \
+     -i \
+     -H 'Content-Type: application/json' \
+     -d $'{
+  "dsnome": "test1",
+  "dscognome": "test2",
+  "cdfisc": "TSTTST80A01H501G",
+  "cdpiva": "test",
+  "dtnasc": "1980-01-01T00:00:00.000Z",
+  "cdsesso": "M",
+  "dslocnasc": "Rome",
+  "cdprovnasc" : "RM",
+  "cdistpropr" : "00001",
+  "nusogg" : "999"
+}' 
+
+curl -X "PUT" "http://localhost:3000/api/soggetti/999" \
+     -i \
+     -H 'Content-Type: application/json' \
+     -d $'{
+  "dsnome": "test1",
+  "dscognome": "test2",
+  "cdfisc": "TSTTST80A01H501G",
+  "cdpiva": "updatedtest",
+  "dtnasc": "1980-01-01T00:00:00.000Z",
+  "cdsesso": "M",
+  "dslocnasc": "Rome",
+  "cdprovnasc" : "RM",
+  "cdistpropr" : "00001",
+  "nusogg" : "999"
+}'
+
+curl -i -X "DELETE" "http://localhost:3000/api/soggetti/999"
+*/
