@@ -1,0 +1,19 @@
+{
+  "name": "Promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculate-square.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0"
+  },
+  "devDependencies": {
+    "fetch": "^1.1.0",
+    "node-fetch": "^2.4.1"
+  }
+}
