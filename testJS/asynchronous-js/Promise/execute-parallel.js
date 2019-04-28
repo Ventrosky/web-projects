@@ -53,3 +53,20 @@ Promise.race([askDealer1(),askDealer2(),askDealer3()])
     .then(value => {
         console.log(value);
     });
+
+Promise.race([askDealer1(),askDealer4(),askDealer3()])
+    .then(value => {
+        console.log(value);
+    })
+    .catch(reason => {
+        console.log(`Reason: ${reason}`);
+    });    
+
+const askShop = ()=>{
+    return Promise.resolve('always resolve first.')
+} // even if last will be cokmpleted first
+
+Promise.race([askDealer1(),askDealer4(),askDealer3(), askShop()])
+    .then(value => {
+        console.log(value);
+    }); 
