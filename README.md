@@ -49,11 +49,6 @@ My personal resume page.
 * Using: **Javascript**, **jQuery**, **Bootstrap**, **HTML5** & **CSS**.
 * Link: https://salvatoreventr.one/
 
-## mail-signature
-
-Just a simple **HTML** email signature template.
-
 ## testJS
 
-Various small test projects. From quick scripts I needed for sorting and cleaning some **MATLAB** results and generate Excell spreadsheets... to sample code for testing **socket.IO**... 
-
+Various small test projects & demos. Ranging from code written playing around with **NodeJS** or new **JavaScript** features... to sample code for testing **socket.IO**... 
