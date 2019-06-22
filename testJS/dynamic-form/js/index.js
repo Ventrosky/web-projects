@@ -17,7 +17,7 @@ const processStr = function(key,inputStr){
 }
 
 const createInput = ([name, value])=>{
-    var elemInput = document.createElement("input");
+    let elemInput = document.createElement("input");
     elemInput.setAttribute("type", "hidden");
     elemInput.setAttribute("id", "cerca" + name);
     elemInput.setAttribute("name", name);
@@ -30,8 +30,8 @@ const appendInput= function(elemInput){
 }
 
 const removeInputs = function(){
-    var formNode = document.getElementById("falseForm");
-        while (formNode.firstChild) {
-            formNode.removeChild(formNode.firstChild);
+    let formNode = document.getElementById("falseForm");
+    while (formNode.firstChild) {
+        formNode.removeChild(formNode.firstChild);
     }
 }
