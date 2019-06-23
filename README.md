@@ -45,7 +45,7 @@ Robert Bunch's *'Socket.IO (with websockets) - the details'* Udemy course projec
 
 ## salvatoreventr.one
 
-My personal resume page.
+Old personal resume page.
 * Using: **Javascript**, **jQuery**, **Bootstrap**, **HTML5** & **CSS**.
 * Link: https://salvatoreventr.one/
 
