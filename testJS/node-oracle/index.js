@@ -1,9 +1,16 @@
+const dotenv = require('dotenv')
+dotenv.config();
+
 const database = require('./services/database.js');
 const webServer = require('./services/web-server.js');
 const dbConfig = require('./config/database.js');
+
 const defaultThreadPoolSize = 4;
 
 process.env.UV_THREADPOOL_SIZE = dbConfig.gesPool.poolMax + defaultThreadPoolSize;
+
+console.log(dbConfig);
+console.log(process.env);
 
 async function startup() {
   console.log('Starting application');
@@ -115,4 +122,27 @@ curl -X "PUT" "http://localhost:3000/api/soggetti/999" \
 }'
 
 curl -i -X "DELETE" "http://localhost:3000/api/soggetti/999"
+
+
+
+
+
+
+
+
+
+curl -X "POST" "http://localhost:3000/api/VerificaBusinessPost" \
+     -i \
+     -H 'Content-Type: application/json' \
+     -d $'{
+  "codeBus": "20",
+  "idUser": "test1",
+  "isAbil": false,
+  "cdCanale": "XXX",
+  "cdGruppo": "99999",
+  "cdIstPropr": "99999"
+}' 
+
+
+
 */

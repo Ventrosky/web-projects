@@ -5,6 +5,8 @@ const morgan = require('morgan');
 const database = require('./database.js');
 const router = require('./router.js');
 
+const verifyToken = require('../middlewares/verifytoken.js');
+
 let httpServer;
  
 function initialize() {
@@ -18,7 +20,7 @@ function initialize() {
         reviver: reviveJson
     }));
 
-    app.use('/api', router);//http://server:port/api/soggetti/:nusogg
+    app.use('/api', verifyToken, router);//http://server:port/api/soggetti/:nusogg
     //app.get('/', async (req, res) => {
     //    const result = await database.simpleExecute('select user, systimestamp from dual');
     //    const user = result.rows[0].USER;

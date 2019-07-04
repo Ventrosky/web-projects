@@ -9,9 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "dotenv": "^8.0.0",
     "env-cmd": "^8.0.2",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
-    "oracledb": "^3.1.2"
+    "oracledb": "^3.1.2",
+    "utf8": "^3.0.0",
+    "utf8-bytes": "0.0.1"
   }
 }
