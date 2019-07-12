@@ -25,7 +25,7 @@ async function post(req, res, next) {
       } else {
         abilitazione.isAbil = true;  
       }
-      res.status(201).json(abilitazione);
+      res.status(200).json(abilitazione);
     } catch (err) {
       next(err);
     }

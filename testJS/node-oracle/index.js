@@ -1,7 +1,8 @@
 const dotenv = require('dotenv')
 dotenv.config();
 
-const database = require('./services/database.js');
+const databaseCFG = require('./services/databaseCFG.js');
+const databaseGES = require('./services/databaseGES.js');
 const webServer = require('./services/web-server.js');
 const dbConfig = require('./config/database.js');
 
@@ -9,44 +10,69 @@ const defaultThreadPoolSize = 4;
 
 process.env.UV_THREADPOOL_SIZE = dbConfig.gesPool.poolMax + defaultThreadPoolSize;
 
-console.log(dbConfig);
-console.log(process.env);
-
-async function startup() {
+async function startupGES() {
   console.log('Starting application');
   try {
     console.log('Initializing database module');
  
-    await database.initialize(); 
+    await databaseGES.initialize(); 
+    console.log("databaseGES initialized");
   } catch (err) {
     console.error(err);
- 
-    process.exit(1); // Non-zero failure code
+    process.exit(1);
   }
+}
+
+async function startupCFG() {
+  console.log('Starting application');
+  try {
+    console.log('Initializing database module');
+    await databaseCFG.initialize(); 
+    console.log("databaseCFG initialized");
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+}
+
+async function startup(){
+  const data = await Promise.all([startupGES(), startupCFG()])
   try {
     console.log('Initializing web server module');
- 
     await webServer.initialize();
   } catch (err) {
     console.error(err);
- 
-    process.exit(1); // Non-zero failure code
+    process.exit(1);
   }
 }
+
+async function shutdownGES(e){
+  try {
+    console.log('Closing database module');
+    await databaseGES.close(); 
+  } catch (err) {
+    console.log('Encountered error', e);
+    err = err || e;
+  } 
+}
+
+async function shutdownCFG(e){
+  try {
+    console.log('Closing database module');
+    await databaseCFG.close(); 
+  } catch (err) {
+    console.log('Encountered error', e);
+    err = err || e;
+  } 
+}
+
 async function shutdown(e) {
     let err = e;
       
     console.log('Shutting down');
 
-    try {
-        console.log('Closing database module');
-     
-        await database.close(); 
-      } catch (err) {
-        console.log('Encountered error', e);
-     
-        err = err || e;
-    }
+    await shutdownGES();
+    await shutdownCFG();
 
     try {
       console.log('Closing web server module');

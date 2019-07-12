@@ -1,4 +1,4 @@
-const database = require('../services/database.js');
+const databaseCFG = require('../services/databaseCFG.js');
 
 const checkQuery =
 `
@@ -19,8 +19,8 @@ async function find(context) {
     binds.cdCanale = context.cdCanale;
     binds.cdGruppo = context.cdGruppo;
     binds.cdIstPropr = context.cdIstPropr;
-   
-    const result = await database.simpleExecute(query, binds);
+    
+    const result = await databaseCFG.simpleExecuteCFG(query, binds);
     
     return result.rows;
 }
