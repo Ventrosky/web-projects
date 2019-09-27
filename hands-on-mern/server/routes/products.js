@@ -1,74 +1,72 @@
-import {ProductModel} from '../models/Product';
-import express from 'express';
+import { ProductModel } from '../models/Product';
 
-const router = express.Router();
-//  => /v1/products
-
-router.get('/', async (req,res) => {
-    const {categories} = req.query;
+export default (app) => {
+  app.get('/v1/products', async (req, res) => {
+    const { categories } = req.query;
     const categoryList = categories ? categories.split(',') : [];
     const products = await ProductModel.find(
-            categoryList.length > 0 ? 
-            { categories: {$in: categoryList}} : 
-            undefined
-        ) || [];
+      categoryList.length > 0 ?
+        { categories: { $in: categoryList } } :
+        undefined
+    ) || [];
     res.send(products);
-});
+  });
 
-router.get('/:id', async (req,res) => {
-    try{
-        const id = req.params.id;
-        const product = await ProductModel.findById(id)
-        if(product){
-            res.send(product);
-        } else {
-            res.status(404).end();
-        }
-    } catch (ex) {
+  app.get('/v1/products/:id', async (req, res) => {
+    try {
+      const product = await ProductModel.findById(req.params.id);
+      if (product) {
+        res.send(product);
+      } else {
         res.status(404).end();
+      }
+    } catch (e) {
+      res.status(404).end();
     }
-});
+  });
 
-router.post('/', async (req,res) => {
-    if(!req.isAdmin){
-        res.status(403).end();
+  app.post('/v1/products', async (req, res) => {
+    if (!req.isAdmin) {
+      return res.status(403).end();
     }
     const product = await ProductModel.create(req.body);
-    if (product){
-        res.status(200).end();
+    if (product) {
+      res.status(200).end();
     } else {
-        res.status(500).end();
+      res.status(500).end();
     }
-});
+  });
 
-router.put('/:id', async (req,res) => {
-    if(!req.isAdmin){
-        res.status(403).end();
+  app.put('/v1/products/:id', (req, res) => {
+    if (!req.isAdmin) {
+      return res.status(403).end();
     }
-    const id = req.params.id;
-    ProductModel.findByIdAndUpdate(id, req.body, (err) => {
-        if (err){
-            res.status(500).end();
+    ProductModel.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      (err) => {
+        if (err) {
+          res.status(500).end();
         } else {
-            res.status(200).end();
+          res.status(200).end();
         }
-    });
-    
-});
+      }
+    );
+  });
 
-router.delete('/:id', async (req,res) => {
-    if(!req.isAdmin){
-        res.status(403).end();
+  app.delete('/v1/products/:id', (req, res) => {
+    if (!req.isAdmin) {
+      return res.status(403).end();
     }
-    const id = req.params.id;
-    ProductModel.findByIdAndDelete(id, (err) => {
-        if (err){
-            res.status(500).end();
+    ProductModel.findByIdAndDelete(
+      req.params.id,
+      (err) => {
+        if (err) {
+          res.status(500).end();
         } else {
-            res.status(200).end();
+          res.status(200).end();
         }
-    });
-    
-});
-
-module.exports = router;
+      }
+    );
+  });
+}

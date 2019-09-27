@@ -1,31 +1,37 @@
-const dotenv = require('dotenv');
-dotenv.config();
-
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-//import users from './mocks/users';
+import helmet from 'helmet';
+import compression from 'compression';
 import logger from './middleware/logger';
-import withAuthentication from './middleware/withAuthentication';
-import db from './db/index';
+import withAdminPermission from './middleware/withAdminPermission';
+import withAuthenticated from './middleware/withAuthentication';
+import getUserRoutes from './routes/users';
+import getProductRoutes from './routes/products';
+import getAuthRoutes from './routes/auth';
+import getOrderRoutes from './routes/orders';
+import db from './db';
 
 const app = express();
-
+app.use(helmet());
+app.use(compression());
 app.use(cors());
-
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true}));
-
-const port = process.env.PORT || 8055;
-
-app.use(withAuthentication);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(withAuthenticated);
+app.use(withAdminPermission);
 app.use(logger);
+getUserRoutes(app);
+getProductRoutes(app);
+getAuthRoutes(app);
+getOrderRoutes(app);
 
-const usersRouter = require('./routes/users');
-const productsRouter = require('./routes/products');
+app.get('/heartbeat', (req, res) => res.send({
+  dateTime: new Date().toJSON()
+}));
 
-app.use('/v1/users',usersRouter);
+const port = process.env.PORT;
+app.listen(port, () =>
+  console.log(`Example app listening on port ${port}!`)
+);
 
-app.use('/v1/products',productsRouter);
-
-app.listen(port, () => console.log(`App listening on port ${port}`));

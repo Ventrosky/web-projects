@@ -1,70 +1,53 @@
+import { UserModel } from '../models/User';
 
-import {UserModel} from '../models/User';
-
-import express from 'express';
-
-const router = express.Router();
-//  => /v1/userss
-
-router.get('/', async (req,res) => {
-    if(!req.isAdmin){
-        res.status(403).end();
+export default (app) => {
+  app.get('/v1/users', async (req, res) => {
+    if (!req.isAdmin) {
+      return res.status(403).end();
     }
     const users = await UserModel.find() || [];
     res.send(users);
-});
+  });
 
-router.get('/:id', async (req,res) => {
-    try{
-        const id = req.params.id;
-        const user = await UserModel.findById(id).catch((err)=>{
-            res.status(404).end();
-        });
-        if(user){
-            res.send(user);
-        } else {
-            res.status(404).end();
-        }
-    } catch (ex) {
+  app.get('/v1/users/:id', async (req, res) => {
+    try {
+      const user = await UserModel.findById(req.params.id);
+      if (user) {
+        res.send(user);
+      } else {
         res.status(404).end();
+      }
+    } catch (e) {
+      res.status(404).end();
     }
-});
+  });
 
-router.post('/', (req,res) => {
-    if(!req.isAdmin){
-        res.status(403).end();
+  app.post('/v1/users', (req, res) => {
+    if (!req.isAdmin) {
+      return res.status(403).end();
     }
-    const username = req.body.username;
-    const email = req.body.email;
-    const role = req.body.role; //TODO: Implement
-    console.log("post: data =>", username, email, role);
+    // TODO: Implement
     res.status(200).end();
-});
+  });
 
-router.post('/register', (req,res) => {
-    //TODO: Implement
+  app.post('/v1/users/register', (req, res) => {
+    // TODO: Implement
     res.status(200).end();
-});
+  });
 
-router.put('/:id', (req,res) => {
-    if(!req.isAdmin){
-        res.status(403).end();
+  app.put('/v1/users/:id', (req, res) => {
+    if (!req.isAdmin) {
+      return res.status(403).end();
     }
-    const id = req.params.id;
-    const username = req.body.username;
-    const email = req.body.email;
-    const role = req.body.role; //TODO: Implement
-    console.log("put: data =>", username, email, role, id);
+    // TODO: Implement
     res.status(200).end();
-});
+  });
 
-router.delete('/:id', (req,res) => {
-    if(!req.isAdmin){
-        res.status(403).end();
+  app.delete('/v1/users/:id', (req, res) => {
+    if (!req.isAdmin) {
+      return res.status(403).end();
     }
-    const id = req.params.id;  //TODO: Implement
-    console.log("delete: data =>", id);
+    // TODO: Implement
     res.status(200).end();
-});
-
-module.exports = router;
+  });
+}
