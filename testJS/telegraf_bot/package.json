@@ -1,0 +1,33 @@
+{
+  "name": "tsundoku_bot",
+  "version": "1.0.0",
+  "description": "Book publishing companies updates",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "telegraf"
+  ],
+  "author": "Ventrosky",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "firebase-admin": "^8.6.1",
+    "node-nlp": "^4.0.0-rc.16",
+    "nodemon": "^1.19.4",
+    "puppeteer": "^2.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "telegraf": "^3.33.0",
+    "uuid": "^3.3.3"
+  }
+}
